@@ -1,0 +1,14 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+
+	@media (max-width: 768px) {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
+
+//todo create component for this
+.mock-square {
+	aspect-ratio: 1;
+	outline: 1px solid #000;
+}
