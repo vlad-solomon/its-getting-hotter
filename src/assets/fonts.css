@@ -1,0 +1,13 @@
+@font-face {
+	font-family: "Zed";
+	src: url("./fonts/ZED-MONO-REGULAR.TTF") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Zed";
+	src: url("./fonts/ZED-MONO-HEAVY.TTF") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}

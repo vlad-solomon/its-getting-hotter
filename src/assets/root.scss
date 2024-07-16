@@ -1,0 +1,35 @@
+:root {
+	--fw-regular: 400;
+	--fw-heavy: 900;
+
+	--black: #181818;
+	--black-80: hsl(from var(--black) h s l / 0.8);
+	--white: #fff;
+
+	--box-shadow: 4px 4px 0 hsl(from var(--black) h s l / 0.5);
+
+	--text-color: var(--black);
+	--text-color--secondary: var(--black-80);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	min-height: 100vh;
+
+	font-family: "Zed", sans-serif;
+	line-height: 1.5;
+	font-weight: var(--fw-regular);
+	color: var(--text-color);
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

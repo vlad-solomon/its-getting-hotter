@@ -1,0 +1,27 @@
+.text-card {
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	padding: 18px;
+	background-color: var(--white);
+	width: 280px;
+	border: 0.15em solid var(--black);
+	box-shadow: var(--box-shadow);
+
+	&__header {
+		font-size: 32px;
+		font-weight: var(--fw-heavy);
+		text-transform: uppercase;
+		line-height: 0.9em;
+		width: 25%;
+	}
+
+	&__blurb {
+		font-size: 10px;
+		margin: 0;
+		color: var(--text-color--secondary);
+	}
+}
