@@ -1,0 +1,7 @@
+.temperature-slice {
+	aspect-ratio: 1;
+	cursor: pointer;
+	&:hover {
+		border: 0.45em solid #fff;
+	}
+}

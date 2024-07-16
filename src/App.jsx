@@ -6,7 +6,7 @@ export default function App() {
 	return (
 		<>
 			<Grid />
-			<TextCard header="It's Getting Hotter" blurb="Year by year statistics about the average global temperature spanning more than 100 years" />
+			<TextCard header="It’s Getting Hotter" blurb="Year by year statistics about the average global temperature spanning more than 100 years" />
 		</>
 	);
 }
