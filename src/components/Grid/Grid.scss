@@ -15,3 +15,24 @@
 		border: 0.45em solid #fff;
 	}
 }
+
+.tippy-box[data-theme~="default"] {
+	font-weight: var(--fw-heavy);
+	font-size: 36px;
+	padding: 0;
+	letter-spacing: -0.08em;
+	background-color: unset;
+}
+
+.tippy-box[data-theme~="default"][data-placement^="top"] > .tippy-arrow::before {
+	display: none;
+}
+.tippy-box[data-theme~="default"][data-placement^="bottom"] > .tippy-arrow::before {
+	display: noneo;
+}
+.tippy-box[data-theme~="default"][data-placement^="left"] > .tippy-arrow::before {
+	display: none;
+}
+.tippy-box[data-theme~="default"][data-placement^="right"] > .tippy-arrow::before {
+	display: none;
+}
