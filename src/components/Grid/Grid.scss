@@ -10,5 +10,8 @@
 //todo create component for this
 .mock-square {
 	aspect-ratio: 1;
-	outline: 1px solid #000;
+	cursor: pointer;
+	&:hover {
+		border: 5px solid #fff;
+	}
 }
