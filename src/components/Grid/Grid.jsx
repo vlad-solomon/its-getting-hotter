@@ -1,7 +1,6 @@
 import "./Grid.scss";
 import data from "./data.json";
 import getMean from "../../utils/getMean";
-import "tippy.js/dist/tippy.css";
 import { TemperatureSlice } from "../TemperatureSlice";
 import { useStore } from "../../stores/useStore";
 

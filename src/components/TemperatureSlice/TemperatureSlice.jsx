@@ -1,5 +1,4 @@
 import "./TemperatureSlice.scss";
-import "tippy.js/dist/tippy.css";
 import getColor from "../../utils/getColor";
 
 export function TemperatureSlice({ temperature, onClick, children }) {
