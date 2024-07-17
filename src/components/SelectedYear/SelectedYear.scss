@@ -3,4 +3,8 @@
 	inset: 0;
 	background-color: var(--white);
 	z-index: 999999;
+	overflow: auto;
+	.temperature-slice {
+		aspect-ratio: 12/1;
+	}
 }
