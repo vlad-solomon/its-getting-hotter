@@ -4,7 +4,13 @@
 	background-color: var(--white);
 	z-index: 999999;
 	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	.temperature-slice__wrapper {
+		flex: 1;
+	}
 	.temperature-slice {
-		aspect-ratio: 12/1;
+		height: 100%;
+		aspect-ratio: unset;
 	}
 }

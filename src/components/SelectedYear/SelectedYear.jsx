@@ -25,7 +25,7 @@ export function SelectedYear() {
 				</TemperatureSlice>
 			))}
 			<TextCard header={year} blurb={blurb}>
-				<button onClick={() => setSelectedYear(null)}>close</button>
+				<button onClick={() => setSelectedYear(null)}>&times;</button>
 			</TextCard>
 		</div>
 	);

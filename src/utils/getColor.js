@@ -1,6 +1,6 @@
 const colors = {
-	13.5: "00876c",
-	13.6875: "50a26f",
+	13: "00876c",
+	13.6: "50a26f",
 	13.875: "88bb72",
 	14.0625: "c1d379",
 	14.25: "fde987",
@@ -9,8 +9,6 @@ const colors = {
 	14.8125: "e86b4e",
 	15: "d43d51",
 };
-
-// 1909
 
 export default function (value) {
 	let nearestKey;
