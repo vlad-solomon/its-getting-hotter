@@ -24,9 +24,9 @@ export function SelectedYear() {
 					<span>{month.toFixed(1)}°C</span>
 				</TemperatureSlice>
 			))}
-			{/* {JSON.stringify({ id, year, temperatures })} */}
-			<button onClick={() => setSelectedYear(null)}>close</button>
-			<TextCard header={year} blurb={blurb} />
+			<TextCard header={year} blurb={blurb}>
+				<button onClick={() => setSelectedYear(null)}>close</button>
+			</TextCard>
 		</div>
 	);
 }

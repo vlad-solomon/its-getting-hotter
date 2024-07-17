@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./App.scss";
 import { Grid } from "./components/Grid/Grid";
 import { SelectedYear } from "./components/SelectedYear";
@@ -6,6 +7,10 @@ import { useStore } from "./stores/useStore";
 
 export default function App() {
 	const selectedYear = useStore((state) => state.selectedYear);
+
+	useEffect(() => {
+		document.body.style.overflow = selectedYear ? "hidden" : "auto";
+	}, [selectedYear]);
 
 	return (
 		<>
