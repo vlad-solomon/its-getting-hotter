@@ -8,14 +8,10 @@ import { useStore } from "./stores/useStore";
 export default function App() {
 	const selectedYear = useStore((state) => state.selectedYear);
 
-	useEffect(() => {
-		document.body.style.overflow = selectedYear ? "hidden" : "auto";
-	}, [selectedYear]);
-
 	return (
 		<>
 			<Grid />
-			<TextCard header="It’s getting hotter" blurb="Year by year statistics about the average global temperature spanning more than 100 years" />
+			{/* <TextCard header="It’s getting hotter" blurb="Year by year statistics about the average global temperature spanning more than 100 years" /> */}
 			{selectedYear && <SelectedYear />}
 		</>
 	);
