@@ -1,7 +1,7 @@
 .grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	border: 0.15em solid var(--black);
+	border: 2px solid var(--black);
 	box-shadow: var(--box-shadow--alt);
 	background-color: var(--black);
 

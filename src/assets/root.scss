@@ -8,6 +8,7 @@
 
 	--box-shadow: 4px 4px 0 hsl(from var(--black) h s l / 0.5);
 	--box-shadow--alt: -4px 4px 0 hsl(from var(--black) h s l / 0.5);
+	--text-shadow: 2px 2px 0 hsl(from var(--black) h s l / 0.15);
 
 	--text-color: var(--black);
 	--text-color--secondary: var(--black-80);
@@ -39,25 +40,4 @@ body {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-
-.tippy-box[data-theme~="default"] {
-	font-weight: var(--fw-heavy);
-	padding: 0;
-	letter-spacing: -0.08em;
-	background-color: unset;
-	text-transform: uppercase;
-}
-
-.tippy-box[data-theme~="default"][data-placement^="top"] > .tippy-arrow::before {
-	display: none;
-}
-.tippy-box[data-theme~="default"][data-placement^="bottom"] > .tippy-arrow::before {
-	display: none;
-}
-.tippy-box[data-theme~="default"][data-placement^="left"] > .tippy-arrow::before {
-	display: none;
-}
-.tippy-box[data-theme~="default"][data-placement^="right"] > .tippy-arrow::before {
-	display: none;
 }

@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./App.scss";
 import { Grid } from "./components/Grid/Grid";
 import { SelectedYear } from "./components/SelectedYear";
@@ -11,7 +10,7 @@ export default function App() {
 	return (
 		<>
 			<Grid />
-			{/* <TextCard header="It’s getting hotter" blurb="Year by year statistics about the average global temperature spanning more than 100 years" /> */}
+			<TextCard header="It’s getting hotter" blurb="Year by year statistics about the average global temperature spanning more than 100 years" />
 			{selectedYear && <SelectedYear />}
 		</>
 	);

@@ -11,14 +11,9 @@ export function Grid() {
 	return (
 		<div className="grid">
 			{data.map(({ id, year, temperatures }) => (
-				<TemperatureSlice
-					key={id}
-					temperature={getMean(temperatures)}
-					tooltipContent={year}
-					tooltipPlacement="top"
-					tooltipOffset={[0, 0]}
-					onClick={() => setSelectedYear({ id, year, temperatures })}
-				/>
+				<TemperatureSlice key={id} temperature={getMean(temperatures)} onClick={() => setSelectedYear({ id, year, temperatures })}>
+					<span>{year}</span>
+				</TemperatureSlice>
 			))}
 		</div>
 	);
