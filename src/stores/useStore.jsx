@@ -1,6 +1,6 @@
 import { create } from "zustand";
+import data from "./data.json";
 
-export const useStore = create((set) => ({
-	selectedYear: null,
-	setSelectedYear: (selectedYear) => set(() => ({ selectedYear })),
+export const useStore = create(() => ({
+	data,
 }));

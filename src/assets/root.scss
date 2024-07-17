@@ -20,11 +20,15 @@
 	box-sizing: border-box;
 }
 
-// ::-webkit-scrollbar {
-// 	height: 0px;
-// 	width: 0px;
-// 	background-color: transparent;
-// }
+a {
+	all: unset;
+}
+
+::-webkit-scrollbar {
+	height: 0px;
+	width: 0px;
+	background-color: transparent;
+}
 
 body {
 	margin: 0;

@@ -5,11 +5,16 @@ import "../src/assets/fonts.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
+import Year from "./pages/Year";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <Home />,
+	},
+	{
+		path: "/:year",
+		element: <Year />,
 	},
 ]);
 
