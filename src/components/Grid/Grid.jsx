@@ -15,7 +15,7 @@ export function Grid() {
 					key={id}
 					temperature={getMean(temperatures)}
 					tooltipContent={year}
-					tooltipPlacement="right"
+					tooltipPlacement="bottom"
 					tooltipOffset={[0, 0]}
 					onClick={() => setSelectedYear({ id, year, temperatures })}
 				/>

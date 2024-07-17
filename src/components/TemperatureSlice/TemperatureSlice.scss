@@ -11,7 +11,9 @@
 		opacity: 0;
 	}
 	&:hover {
-		border: 0.45em solid #fff;
+		scale: 1.25;
+		box-shadow: var(--box-shadow);
+		border: 2px solid var(--black); // border: 0.45em solid #fff;
 		& > span {
 			opacity: 1;
 		}

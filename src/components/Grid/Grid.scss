@@ -1,6 +1,9 @@
 .grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+	border: 0.15em solid var(--black);
+	box-shadow: var(--box-shadow--alt);
+	background-color: var(--black);
 
 	@media (max-width: 768px) {
 		grid-template-columns: repeat(6, 1fr);

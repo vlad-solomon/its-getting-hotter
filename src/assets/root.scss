@@ -7,6 +7,7 @@
 	--white: #fff;
 
 	--box-shadow: 4px 4px 0 hsl(from var(--black) h s l / 0.5);
+	--box-shadow--alt: -4px 4px 0 hsl(from var(--black) h s l / 0.5);
 
 	--text-color: var(--black);
 	--text-color--secondary: var(--black-80);
@@ -18,11 +19,11 @@
 	box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-	height: 0px;
-	width: 0px;
-	background-color: transparent;
-}
+// ::-webkit-scrollbar {
+// 	height: 0px;
+// 	width: 0px;
+// 	background-color: transparent;
+// }
 
 body {
 	margin: 0;
