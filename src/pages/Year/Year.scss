@@ -7,6 +7,12 @@
 	.temperature-slice {
 		aspect-ratio: 10 / 1;
 		min-height: 80px;
+		span {
+			&:last-of-type {
+				align-self: flex-end;
+				text-transform: uppercase;
+			}
+		}
 		&:hover {
 			scale: 1.01;
 		}

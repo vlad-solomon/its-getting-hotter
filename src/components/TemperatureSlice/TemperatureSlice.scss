@@ -8,16 +8,13 @@
 	overflow: hidden;
 	border: 2px solid var(--black);
 	box-shadow: var(--box-shadow--small);
+	container-type: size;
 	span {
 		color: var(--white);
 		font-weight: var(--fw-heavy);
-		font-size: 18px;
+		font-size: clamp(10px, 30cqw, 24px);
 		opacity: 0;
 		text-shadow: var(--text-shadow);
-		&:last-of-type {
-			align-self: flex-end;
-			text-transform: uppercase;
-		}
 	}
 	&:hover {
 		rotate: 0.5deg !important;
@@ -30,9 +27,9 @@
 		}
 	}
 
-	@media (min-width: 768px) {
-		span {
-			font-size: 24px;
-		}
-	}
+	// @media (min-width: 768px) {
+	// 	span {
+	// 		font-size: 24px;
+	// 	}
+	// }
 }

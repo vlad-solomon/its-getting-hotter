@@ -1,12 +1,8 @@
 .grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	// border: 2px solid var(--black);
-	// box-shadow: var(--box-shadow--alt);
-	// background-color: var(--black);
 	rotate: -0.5deg;
 	gap: 4px;
-
 	@media (max-width: 768px) {
 		grid-template-columns: repeat(6, 1fr);
 	}

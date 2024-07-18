@@ -11,7 +11,9 @@ export function Grid() {
 		<div className="grid">
 			{data.map(({ id, year, temperatures }) => (
 				<Link to={`/${year}`} key={id}>
-					<TemperatureSlice temperature={getMean(temperatures)}>{/* <span>{year}</span> */}</TemperatureSlice>
+					<TemperatureSlice temperature={getMean(temperatures)}>
+						<span>{year}</span>
+					</TemperatureSlice>
 				</Link>
 			))}
 		</div>
