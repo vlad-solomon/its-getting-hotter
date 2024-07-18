@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { TextCard } from "../components/TextCard";
 import { useStore } from "../stores/useStore";
+import { TemperatureSlice } from "../components/TemperatureSlice";
 import getHighOrLow from "../utils/getHighOrLow";
 import getMean from "../utils/getMean";
 
@@ -8,6 +9,9 @@ export default function Year() {
 	const { year } = useParams();
 	const data = useStore((state) => state.data);
 	const { temperatures } = data.find((yearObject) => yearObject.year == year);
+
+	//todo handle non existing params
+
 	const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 	const blurb = `
         The temperatures ranged from
@@ -19,7 +23,11 @@ export default function Year() {
 
 	return (
 		<>
-			<div>x</div>
+			<div className="months">
+				{temperatures.map((month, index) => (
+					<TemperatureSlice key={`${year}-${months[index]}`} temperature={month} />
+				))}
+			</div>
 			<TextCard header={year} blurb={blurb} />
 		</>
 	);

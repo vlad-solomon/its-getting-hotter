@@ -3,6 +3,8 @@
 	padding: 9px;
 	aspect-ratio: 1;
 	cursor: pointer;
+	overflow: hidden;
+	border: 2px solid transparent;
 
 	span {
 		color: var(--white);
@@ -13,8 +15,8 @@
 	}
 	&:hover {
 		scale: 1.25;
-		box-shadow: var(--box-shadow);
-		border: 2px solid var(--black);
+		box-shadow: 0 8px 0 -4px rgba(0, 0, 0, 0.5);
+		border-color: var(--black);
 		& > span {
 			opacity: 1;
 		}
