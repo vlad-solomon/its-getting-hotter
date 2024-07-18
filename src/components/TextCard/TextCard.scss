@@ -1,8 +1,7 @@
 .text-card {
 	position: fixed;
-	z-index: 999999;
-	bottom: 25px;
 	right: 25px;
+	// bottom: 25px;
 	display: flex;
 	flex-direction: column;
 	gap: 22px;
@@ -12,6 +11,7 @@
 	border: 2px solid var(--black);
 	box-shadow: var(--box-shadow);
 	rotate: 0.5deg;
+	transition: 500ms;
 
 	button {
 		position: absolute;

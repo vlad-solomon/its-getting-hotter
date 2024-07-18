@@ -33,7 +33,7 @@ a {
 
 html,
 body {
-	height: 100%;
+	height: 100dvh;
 }
 
 body {
@@ -42,7 +42,6 @@ body {
 	flex-direction: column;
 	min-width: 320px;
 	min-height: 600px;
-	background-color: #fefefe;
 
 	font-family: "Zed", sans-serif;
 	line-height: 1.5;
@@ -57,5 +56,6 @@ body {
 
 #root {
 	flex: 1;
-	padding: 40px;
+	// padding: 40px;
+	padding: 20px;
 }
