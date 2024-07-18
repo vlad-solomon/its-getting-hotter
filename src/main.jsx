@@ -21,7 +21,7 @@ const router = createBrowserRouter(
 		},
 	],
 	{
-		basename: "/vlad-solomon.github.io",
+		basename: "/its-getting-hotter",
 	}
 );
 
