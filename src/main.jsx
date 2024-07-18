@@ -8,17 +8,22 @@ import Home from "./pages/Home";
 import Year from "./pages/Year";
 import NotFound from "./pages/NotFound";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+	[
+		{
+			path: "/",
+			element: <Home />,
+		},
+		{
+			path: "/:year",
+			element: <Year />,
+			errorElement: <NotFound />,
+		},
+	],
 	{
-		path: "/",
-		element: <Home />,
-	},
-	{
-		path: "/:year",
-		element: <Year />,
-		errorElement: <NotFound />,
-	},
-]);
+		basename: "/vlad-solomon.github.io",
+	}
+);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
