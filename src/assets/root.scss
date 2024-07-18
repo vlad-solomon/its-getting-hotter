@@ -56,6 +56,8 @@ body {
 
 #root {
 	flex: 1;
-	// padding: 40px;
 	padding: 20px;
+	@media (min-width: 768px) {
+		padding: 40px;
+	}
 }

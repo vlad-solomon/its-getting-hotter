@@ -2,7 +2,7 @@ import "./TextCard.scss";
 import { useState, useEffect, useRef } from "react";
 import { isMobile } from "react-device-detect";
 
-export function TextCard({ header, blurb, children }) {
+export function TextCard({ header, blurb, isWrap = false, children }) {
 	const [position, setPosition] = useState(25);
 	const ref = useRef();
 
@@ -31,7 +31,9 @@ export function TextCard({ header, blurb, children }) {
 
 	return (
 		<div className="text-card" style={{ bottom: position }} ref={ref}>
-			<span className="text-card__header">{header}</span>
+			<span className="text-card__header" style={{ width: isWrap ? "50%" : "100%" }}>
+				{header}
+			</span>
 			<p className="text-card__blurb">{blurb}</p>
 			{children}
 		</div>

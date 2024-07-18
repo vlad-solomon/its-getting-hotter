@@ -1,7 +1,6 @@
 .text-card {
 	position: fixed;
 	right: 25px;
-	// bottom: 25px;
 	display: flex;
 	flex-direction: column;
 	gap: 22px;
@@ -11,7 +10,7 @@
 	border: 2px solid var(--black);
 	box-shadow: var(--box-shadow);
 	rotate: 0.5deg;
-	transition: 500ms;
+	transition: bottom 500ms;
 
 	button {
 		position: absolute;
@@ -30,7 +29,6 @@
 		font-weight: var(--fw-heavy);
 		text-transform: uppercase;
 		line-height: 0.9em;
-		width: 50%;
 		letter-spacing: -0.09em;
 	}
 
@@ -39,5 +37,22 @@
 		margin: 0;
 		color: var(--text-color--secondary);
 		text-wrap: balance;
+	}
+
+	@media (min-width: 768px) {
+		width: 370px;
+		&__header {
+			font-size: 36px;
+		}
+		&__blurb {
+			font-size: 14px;
+		}
+	}
+	@media (max-width: 380px) {
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: calc(100% - 40px);
+		box-shadow: 0 8px 0 -4px rgba(0, 0, 0, 0.5);
 	}
 }

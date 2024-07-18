@@ -5,7 +5,7 @@ export default function Home() {
 	return (
 		<>
 			<Grid />
-			<TextCard header="It’s getting hotter" blurb="Year by year statistics about the average global temperature spanning more than 140 years" />
+			<TextCard header="It’s getting hotter" blurb="Year by year statistics about the average global temperature spanning more than 140 years" isWrap={true} />
 		</>
 	);
 }
