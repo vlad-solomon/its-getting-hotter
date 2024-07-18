@@ -59,19 +59,3 @@ body {
 	flex: 1;
 	padding: 40px;
 }
-
-//todo to own file
-.months {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	rotate: -0.5deg;
-	gap: 8px;
-	.temperature-slice {
-		aspect-ratio: 10 / 1;
-		min-height: 80px;
-		&:hover {
-			scale: 1.01;
-		}
-	}
-}

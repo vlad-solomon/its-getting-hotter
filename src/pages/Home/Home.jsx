@@ -1,5 +1,5 @@
-import { Grid } from "../components/Grid/Grid";
-import { TextCard } from "../components/TextCard";
+import { Grid } from "../../components/Grid/Grid";
+import { TextCard } from "../../components/TextCard";
 
 export default function Home() {
 	return (

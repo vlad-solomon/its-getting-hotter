@@ -1,9 +1,10 @@
+import "./Year.scss";
 import { useParams } from "react-router-dom";
-import { TextCard } from "../components/TextCard";
-import { useStore } from "../stores/useStore";
-import { TemperatureSlice } from "../components/TemperatureSlice";
-import getHighOrLow from "../utils/getHighOrLow";
-import getMean from "../utils/getMean";
+import { TextCard } from "../../components/TextCard";
+import { TemperatureSlice } from "../../components/TemperatureSlice";
+import { useStore } from "../../stores/useStore";
+import getMean from "../../utils/getMean";
+import getHighOrLow from "../../utils/getHighOrLow";
 
 export default function Year() {
 	const { year } = useParams();
