@@ -13,13 +13,14 @@ export default function Year() {
 	//todo handle non existing params
 
 	const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+	const header = year == 2024 ? `2024, so far...` : year;
 	const blurb = `
         The temperatures ranged from
         a low of ${temperatures[getHighOrLow("low", temperatures)]}°C
         in ${months[getHighOrLow("low", temperatures)]} 
         to a high of ${temperatures[getHighOrLow("high", temperatures)]}°C
         in ${months[getHighOrLow("high", temperatures)]}.
-        The average temperature for the year was ${getMean(temperatures).toFixed(1)}°C`;
+        The average temperature for the year ${year == 2024 ? "so far is" : "was"} ${getMean(temperatures).toFixed(1)}°C`;
 
 	return (
 		<>
@@ -28,7 +29,7 @@ export default function Year() {
 					<TemperatureSlice key={`${year}-${months[index]}`} temperature={month} />
 				))}
 			</div>
-			<TextCard header={year} blurb={blurb} />
+			<TextCard {...{ header, blurb }} />
 		</>
 	);
 }

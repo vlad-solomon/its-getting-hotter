@@ -8,6 +8,7 @@
 
 	--box-shadow: 4px 4px 0 hsl(from var(--black) h s l / 0.5);
 	--box-shadow--alt: -4px 4px 0 hsl(from var(--black) h s l / 0.5);
+	--box-shadow--small: -2px 2px 0 hsl(from var(--black) h s l / 0.25);
 	--text-shadow: 2px 2px 0 hsl(from var(--black) h s l / 0.15);
 
 	--text-color: var(--black);
@@ -41,6 +42,7 @@ body {
 	flex-direction: column;
 	min-width: 320px;
 	min-height: 600px;
+	background-color: #fefefe;
 
 	font-family: "Zed", sans-serif;
 	line-height: 1.5;
@@ -65,6 +67,8 @@ body {
 	flex-direction: column;
 	border: 2px solid var(--black);
 	box-shadow: var(--box-shadow--alt);
+	rotate: -0.5deg;
+	background-color: var(--black);
 	.temperature-slice {
 		flex: 1;
 		aspect-ratio: unset;
