@@ -1,7 +1,8 @@
 .temperature-slice {
 	position: relative;
 	display: flex;
-	padding: 9px;
+	justify-content: space-between;
+	padding: 8px;
 	aspect-ratio: 1;
 	cursor: pointer;
 	overflow: hidden;
@@ -13,9 +14,13 @@
 		font-size: 18px;
 		opacity: 0;
 		text-shadow: var(--text-shadow);
+		&:last-of-type {
+			align-self: flex-end;
+			text-transform: uppercase;
+		}
 	}
 	&:hover {
-		rotate: 0deg !important;
+		rotate: 0.5deg !important;
 		z-index: 1;
 		scale: 1.25;
 		box-shadow: 0 8px 0 -4px rgba(0, 0, 0, 0.5);

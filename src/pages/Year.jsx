@@ -25,8 +25,11 @@ export default function Year() {
 	return (
 		<>
 			<div className="months">
-				{temperatures.map((month, index) => (
-					<TemperatureSlice key={`${year}-${months[index]}`} temperature={month} />
+				{temperatures.map((temperature, index) => (
+					<TemperatureSlice key={`${year}-${months[index]}`} temperature={temperature}>
+						<span>{temperature}°C</span>
+						<span>{months[index]}</span>
+					</TemperatureSlice>
 				))}
 			</div>
 			<TextCard {...{ header, blurb }} />
