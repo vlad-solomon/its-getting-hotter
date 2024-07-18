@@ -6,6 +6,7 @@ import "../src/assets/fonts.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Year from "./pages/Year";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter([
 	{
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
 	{
 		path: "/:year",
 		element: <Year />,
+		errorElement: <NotFound />,
 	},
 ]);
 

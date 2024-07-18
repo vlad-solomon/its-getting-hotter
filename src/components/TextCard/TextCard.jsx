@@ -2,13 +2,14 @@ import "./TextCard.scss";
 import { useState, useEffect, useRef } from "react";
 import { isMobile } from "react-device-detect";
 
-export function TextCard({ header, blurb, isWrap = false, children }) {
+export function TextCard({ header, blurb, isWrap = false, isMovable = true, children }) {
 	const [position, setPosition] = useState(25);
 	const ref = useRef();
 
 	useEffect(() => {
 		const { height } = ref.current.getBoundingClientRect();
 		function handlePosition(e) {
+			if (!isMovable) return;
 			const { innerHeight } = window;
 			const { clientY } = e;
 

@@ -1,0 +1,17 @@
+.not-found {
+	height: 100%;
+	.temperature-slice {
+		justify-content: center;
+		align-items: center;
+		aspect-ratio: unset;
+		pointer-events: none;
+		height: 100%;
+		border-style: dashed;
+		font-size: 100px;
+		color: var(--black-80);
+		font-weight: var(--fw-heavy);
+	}
+	.text-card {
+		cursor: pointer;
+	}
+}
