@@ -65,16 +65,13 @@ body {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	border: 2px solid var(--black);
-	box-shadow: var(--box-shadow--alt);
 	rotate: -0.5deg;
-	background-color: var(--black);
+	gap: 8px;
 	.temperature-slice {
-		flex: 1;
-		aspect-ratio: unset;
-		// transition: 200ms;
+		aspect-ratio: 10 / 1;
+		min-height: 80px;
 		&:hover {
-			scale: 1.025 1.25;
+			scale: 1.01;
 		}
 	}
 }
