@@ -13,6 +13,6 @@ Ever wondered what the average global temperature was in, say, 1883? Or how hot 
 
 #### Where's the data coming from?
 
-From the ever trustworthy NASA. Here's the [link](https://data.giss.nasa.gov/gistemp/) to the page dedicated to these kinds of datasets, and here's the [raw data](https://data.giss.nasa.gov/gistemp/tabledata_v4/T_AIRS/GLB.Ts+dSST.txt) I used to create this site.
+From the ever trustworthy NASA. Here's the [link](https://data.giss.nasa.gov/gistemp/) to the page dedicated to these kinds of datasets, and here's the [raw data](https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.txt) I used to create this site.
 
 # Visit [It's getting hotter](https://vlad-solomon.github.io/its-getting-hotter/)
