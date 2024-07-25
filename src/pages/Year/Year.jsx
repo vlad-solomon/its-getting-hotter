@@ -21,8 +21,6 @@ export default function Year() {
         in ${months[getHighOrLow("high", temperatures)]}.
         The average temperature for the year ${year == 2024 ? "so far is" : "was"} ${getMean(temperatures).toFixed(1)}°C`;
 
-	//todo handle non existing params
-
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
