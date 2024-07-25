@@ -4,7 +4,7 @@
 
 ##### ...and I bet you can feel it too!
 
-Ever wondered what the average global temperature was in, say, 1883? Or how hot it got in July 2001? Well, you've come to the right place! [It's getting hotter](https://vlad-solomon.github.io/its-getting-hotter/) visualizes over 140 years of global temperatures, with each year represented as a vibrant square in an awesome grid.
+Ever wondered what the average global temperature was in, say, 1883? Or how hot it got in July 2001? Well, you've come to the right place! [It's getting hotter](https://its-getting-hotter.com) visualizes over 140 years of global temperatures, with each year represented as a vibrant square in an awesome grid.
 
 #### How It Works
 
