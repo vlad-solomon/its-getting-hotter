@@ -2,10 +2,10 @@ import "./Grid.scss";
 import getMean from "../../utils/getMean";
 import { TemperatureSlice } from "../TemperatureSlice";
 import { Link } from "react-router-dom";
-import { useStore } from "../../stores/useStore";
+import { useData } from "../../context/DataContext";
 
 export function Grid() {
-	const data = useStore((state) => state.data);
+	const data = useData();
 
 	return (
 		<div className="grid">
