@@ -2,14 +2,15 @@ import "./Year.scss";
 import { useParams } from "react-router-dom";
 import { TextCard } from "../../components/TextCard";
 import { TemperatureSlice } from "../../components/TemperatureSlice";
-import { useStore } from "../../stores/useStore";
 import getMean from "../../utils/getMean";
 import getHighOrLow from "../../utils/getHighOrLow";
 import { useEffect } from "react";
+import { useData } from "../../context/DataContext";
 
 export default function Year() {
 	const { year } = useParams();
-	const data = useStore((state) => state.data);
+	const data = useData();
+
 	const { temperatures } = data.find((yearObject) => yearObject.year == year);
 	const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 	const header = year == 2024 ? `2024, so far...` : year;
