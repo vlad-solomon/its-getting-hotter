@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { TextCard } from "../../components/TextCard";
 import { TemperatureSlice } from "../../components/TemperatureSlice";
 import { useEffect } from "react";
-import { useData } from "../../context/DataContext";
+import { useData } from "../../context/useData";
 import NotFound from "../NotFound";
 import getBlurb from "../../utils/getBlurb";
 import months from "../../utils/months";

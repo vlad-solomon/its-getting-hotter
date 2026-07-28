@@ -28,7 +28,7 @@ export function TextCard({ header, blurb, isWrap = false, isMovable = true, chil
 			document.removeEventListener("mousemove", handlePosition);
 			window.removeEventListener("scroll", handlePosition);
 		};
-	}, []);
+	}, [isMovable]);
 
 	return (
 		<div className="text-card" style={{ bottom: position }} ref={ref}>
