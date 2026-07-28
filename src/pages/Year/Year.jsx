@@ -13,7 +13,9 @@ export default function Year() {
 	const selectedYearData = data.find((yearObject) => yearObject.year == year);
 	const [header, blurb] = getBlurb(selectedYearData);
 
-	useEffect(() => window.scrollTo(0, 0), []);
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<>
