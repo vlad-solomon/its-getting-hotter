@@ -4,6 +4,7 @@ import { TextCard } from "../../components/TextCard";
 import { TemperatureSlice } from "../../components/TemperatureSlice";
 import { useEffect } from "react";
 import { useData } from "../../context/DataContext";
+import NotFound from "../NotFound";
 import getBlurb from "../../utils/getBlurb";
 import months from "../../utils/months";
 
@@ -11,11 +12,14 @@ export default function Year() {
 	const { year } = useParams();
 	const data = useData();
 	const selectedYearData = data.find((yearObject) => yearObject.year == year);
-	const [header, blurb] = getBlurb(selectedYearData);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
+	if (!selectedYearData) return <NotFound />;
+
+	const [header, blurb] = getBlurb(selectedYearData);
 
 	return (
 		<>

@@ -25,7 +25,7 @@ export function TextCard({ header, blurb, isWrap = false, isMovable = true, chil
 			window.addEventListener("scroll", handlePosition);
 		}
 		return () => {
-			document.removeEventListener("mousedown", handlePosition);
+			document.removeEventListener("mousemove", handlePosition);
 			window.removeEventListener("scroll", handlePosition);
 		};
 	}, []);
