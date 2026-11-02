@@ -11,4 +11,12 @@ module.exports = {
 		"react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
 		"react/prop-types": "off",
 	},
+	overrides: [
+		{
+			files: ["worker/**/*.js"],
+			env: { browser: false, worker: true, es2022: true },
+			parserOptions: { ecmaVersion: "latest" },
+			globals: { AbortSignal: "readonly" },
+		},
+	],
 };

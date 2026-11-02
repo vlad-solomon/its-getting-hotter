@@ -1,0 +1,24 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "its-getting-hotter",
+	"main": "worker/index.js",
+	"compatibility_date": "2026-10-15",
+	"assets": {
+		"directory": "./dist",
+		"binding": "ASSETS",
+		// Client-side routing: unknown paths fall back to index.html
+		"not_found_handling": "single-page-application"
+	},
+	"routes": [
+		{ "pattern": "its-getting-hotter.com", "custom_domain": true },
+		{ "pattern": "www.its-getting-hotter.com", "custom_domain": true }
+	],
+	"triggers": {
+		// 09:00 UTC on the 15th: pulls last month from NASA GISTEMP and opens a PR updating src/context/data.json
+		"crons": ["0 9 15 * *"]
+	},
+	"observability": {
+		"enabled": true
+	}
+	// Secret: GITHUB_TOKEN (wrangler secret put GITHUB_TOKEN)
+}

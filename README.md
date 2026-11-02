@@ -15,4 +15,11 @@ Ever wondered what the average global temperature was in, say, 1883? Or how hot 
 
 From the ever trustworthy NASA. Here's the [link](https://data.giss.nasa.gov/gistemp/) to the page dedicated to these kinds of datasets, and here's the [raw data](https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.txt) I used to create this site.
 
+#### Deployment
+
+The site and the monthly data update run as one Cloudflare Worker (`wrangler.jsonc`):
+
+-   **Site:** `npm run deploy` builds with Vite and serves `dist/` as static assets.
+-   **Data:** a cron (`worker/index.js`) runs on the 15th of each month, reads last month's value from NASA GISTEMP and opens a PR updating `src/context/data.json`. It needs a `GITHUB_TOKEN` secret (`npx wrangler secret put GITHUB_TOKEN`).
+
 # Visit [It's getting hotter](https://its-getting-hotter.com)
